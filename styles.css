@@ -1,0 +1,262 @@
+/* line to import Itim font*/
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+/* apply to all webpage*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Styling body section*/
+body {
+  font-family: "Itim-Regular", sans-serif;
+  background-color: #ffffff;
+  font-size: 2rem;
+}
+/*Navigation and logo section*/
+.nav-bar {
+  background-color: #574833;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: Inter, sans-serif;
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  color: yellowgreen;
+  font-weight: 800;
+  font-size: 2rem;
+  font-family: Algerian;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  text-decoration: underline;
+}
+
+.nav-links a {
+  color: #101731;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1rem;
+}
+/*Head section*/
+.header {
+  background-color: #0f1630;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.header h1 {
+  color: #574833;
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+/*Main contents section styling*/
+.main-content {
+  background-color: #574833;
+  padding: 2rem 1rem;
+}
+.education {
+  font-size: 1rem;
+  color: yellowgreen;
+  font-weight: 1000;
+  font-family: "itim-Regular", sans-serif;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  align-items: center;
+}
+
+.hero-image {
+  width: 200px;
+  height: 240px;
+  object-fit: cover;
+  margin-left: 0px;
+}
+
+.hero-quote {
+  flex: 1;
+  min-width: 300px;
+  color: #ffffff;
+  font-size: 32px;
+  font-family: "itim-Regular", sans-serif;
+}
+
+.section-title {
+  background-color: #574833;
+  color: #101731;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 1rem;
+  margin: 2rem 0;
+  max-width: fit-content;
+}
+
+.about-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.work-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.work-card {
+  background-color: #344380;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.work-card h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-text {
+  flex: 1;
+  min-width: 200px;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.learn-more {
+  background-color: #521212;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.contacts {
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.contacts p {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.contacts .emphasis {
+  font-style: italic;
+}
+/*footer styling*/
+.footer {
+  background-color: #101731;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%); /* Makes icons white */
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/*Medi querry used for making it Responsive*/
+
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-quote {
+    font-size: 1.5rem;
+  }
+
+  .work-card {
+    padding: 1rem;
+  }
+
+  .card-content {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .work-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: max-content;
+}
+
+.work-card {
+  flex: 0 0 100%; /* Make each card take full width */
+}
+
